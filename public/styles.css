@@ -31173,6 +31173,16 @@ video {
           animation: bounce 1s infinite;
 }
 
+.active {
+  background-color: #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

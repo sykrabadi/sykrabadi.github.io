@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+    background-color: #fff;
+    color: #fff;
+    text-decoration: none;
+  }
+
+*{
+    scroll-behavior: smooth;
+}
