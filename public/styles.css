@@ -31173,14 +31173,62 @@ video {
           animation: bounce 1s infinite;
 }
 
-.active {
-  background-color: #fff;
+.section-nav div.active > a {
   color: #fff;
   text-decoration: none;
 }
 
 *{
   scroll-behavior: smooth;
+}
+
+.btn:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.btn{
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  border-radius: 9999px;
+  border-width: 2px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.btn:hover{
+  --tw-text-opacity: 1;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+}
+
+.btn{
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: 25%;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+  transition-duration: 300ms;
+}
+
+.card{
+  border-radius: 0.75rem;
+  justify-items: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  overflow: hidden;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  width: 100%
 }
 
 @media (min-width: 640px){
