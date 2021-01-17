@@ -25,13 +25,13 @@
                     </a>
                 </div>
                 <div class="flex justify-center">
-                    <a href="#Medium" class="a hover:text-white text-gray-400 transition duration-300 ease-linear">
+                    <a href="#Writings" class="a hover:text-white text-gray-400 transition duration-300 ease-linear">
                         <svg class="w-5 block mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                         </svg>
-                        <span>MEDIUM</span>
+                        <span>WRITINGS</span>
                     </a>
                 </div>
                 <div class="flex justify-center">
@@ -80,33 +80,39 @@
                 </div>
             </section>
 
-            <section id="Medium" class="page" data-aos="fade-right">
+            <section id="Writings" class="page" data-aos="fade-right">
                 <div class="h-screen pr-4 pt-16 mb-10 border-b-2 border-white">
-                    <span class="uppercase font-body text-white m-4 border-b-4 border-white">Medium</span>
+                    <span class="uppercase font-body text-white m-4 border-b-4 border-white">WRITINGS</span>
                     <br>
                     <span class="m-4 text-white pt-4">Showing Latest 3 Posts On <a href="https://muhammadsyukura.medium.com/" class="hover:border-b-2 hover:border-white">Medium</a></span>
                     <div class="grid grid-cols-3 pt-4 pl-4 justify-items-center gap-2">
                         <!-- Cards -->
-                        <div class="card">
-                            <img src="../src/dmitry-ratushny-O33IVNPb0RI-unsplash.jpg" alt="" class="pb-2">
-                            <span>Apakah Kita Sudah Belajar Dengan Benar?</span>
+                        <div class="card flex flex-col place-items-center" data-aos="fade-up" data-aos-delay="500">
+                            <img src="../src/dmitry-ratushny-O33IVNPb0RI-unsplash.jpg" alt="" class="object-cover pb-2">
+                            <span class="font-bold">Apakah Kita Sudah Belajar Dengan Benar?</span>
                             <br>
-                            <p class="p-6">Belajar merupakan perjalanan spiritual dan personal, sehingga tidak dapat menjadi bahan perbandingan. Lantas, sebab-sebab apa yang membuat kita salah dalam belajar?</p>
+                            <p class="p-3 h-2/5">Belajar merupakan perjalanan spiritual dan personal, sehingga tidak dapat menjadi bahan perbandingan. Lantas, sebab-sebab apa yang membuat kita salah dalam belajar?</p>
                             <div class="btn">
                                 <a href="https://muhammadsyukura.medium.com/apakah-kita-sudah-belajar-dengan-benar-a0868b219b08" >Visit</a> 
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="../src/freddie-marriage-wofDw8uqX6I-unsplash.jpg" alt="" class="pb-2">
-                            <span>Mempersoalkan Ketakterhinggaan</span>
+                        <div class="card flex flex-col place-items-center" data-aos="fade-down" data-aos-delay="1000">
+                            <img src="../src/freddie-marriage-wofDw8uqX6I-unsplash.jpg" alt="" class="pb-2 object-cover">
+                            <span class="font-bold">Mempersoalkan Ketakterhinggaan</span>
                             <br>
-                            <p class="p-6">Ketakterhinggaan merupakan bagian dari matematika yang tidak bisa dipisahkan. Namun, kadang-kadang ia muncul di tempat tak terduga. Deret Gandi merupakan penjumlahan dari 1-1+1-... yang menghasilkan nilai tak hingga. Mengapa fenomena ini bisa terjadi? </p>
+                            <p class="p-3 h-2/5">Ketakterhinggaan merupakan bagian dari matematika yang tidak bisa dipisahkan. Namun, kadang-kadang ia muncul di tempat tak terduga. Deret Gandi merupakan penjumlahan dari 1-1+1-... yang menghasilkan nilai tak hingga. Mengapa fenomena ini bisa terjadi? </p>
                             <div class="btn justify-self-center">
                                 <a href="https://muhammadsyukura.medium.com/mempersoalkan-ketakterhinggaan-ab6b8efb2122" >Visit</a> 
                             </div>
                         </div>
-                        <div class="bg-white">
-                            hadew
+                        <div class="card flex flex-col place-items-center " data-aos="fade-up" data-aos-delay="1500">
+                            <img src="../src/jose-antonio-gallego-vazquez-YnPKOenIOiY-unsplash.jpg" alt="" class="object-cover pb-2">
+                            <span class="font-bold">Bagaimana Rasanya Menjalani Hidup Sebagai Contoh Bagi Orang Lain?</span>
+                            <br>
+                            <p class="p-3 h-2/5">Tiap orang memiliki jalan hidup masing-masing, namun pernahkah anda merasa <span class="italic">mengapa harus saya yang menerima ujian ini?</span></p>
+                            <div class="btn justify-self-center">
+                                <a href="https://muhammadsyukura.medium.com/bagaimana-rasanya-menjalani-hidup-sebagai-contoh-bagi-orang-lain-b8cebd080286" >Visit</a> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -128,6 +134,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
+            offset: 200,
             delay:200,
             duration:1000,
             once:false,
