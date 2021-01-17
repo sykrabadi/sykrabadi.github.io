@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
-<body class="font-body animation-area">
-    <div class="grid grid-cols-8">
+<body class="font-body">
+    <div class="grid grid-cols-8 ">
         <!-- Content Wrapper -->
-        <aside class="section-nav col-span-1 py-16 bg-black h-screen border-r-2 border-white sticky top-0 bottom-0">
-            <div class="grid grid-rows-4 place-content-evenly gap-y-28">
-                <div class="flex justify-center">
+        <aside
+            class="section-nav col-span-1 py-16 bg-black h-screen border-r-2 border-white border-opacity-10 sticky top-0 bottom-0">
+            <div class="grid grid-rows-4 place-content-evenly gap-y-28 text-xs uppercase">
+                <div class="flex justify-center ml-2 w-40 ">
                     <a href="#About" class="a hover:text-white text-gray-400 transition duration-300 ease-linear">
                         <svg class="w-5 block mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                         </svg>
-                        <span>ABOUT</span>
+                        <span>About</span>
                     </a>
                 </div>
                 <div class="flex justify-center">
@@ -31,7 +32,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                         </svg>
-                        <span>WRITINGS</span>
+                        <span>Writings</span>
                     </a>
                 </div>
                 <div class="flex justify-center">
@@ -41,7 +42,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                         </svg>
-                        <span>PROJECTS</span>
+                        <span>Projects</span>
                     </a>
                 </div>
                 <div class="flex justify-center">
@@ -51,22 +52,22 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                         </svg>
-                        <span>CONTACTS</span>
+                        <span>Contacts</span>
                     </a>
                 </div>
             </div>
         </aside>
         <!-- End Nav -->
 
-        <main class="col-span-7 bg-black w-full">
+        <main class="col-span-7 w-full ball">
             <section id="About" class="page" data-aos="fade-right">
                 <div class="h-screen pr-4 pt-16 mb-10">
                     <span class="uppercase font-body text-white m-4 border-b-4 border-white">About</span>
                     <div class="grid grid-cols-2 h-full place-items-center">
                         <div class="overflow-hidden rounded-full border-white text-white w-1/2 h-1/2 place-self-center">
-                            <img src="../src/foto mojok.jpg" alt="">
+                            <img src="../src/foto mojok.jpg" alt="" data-aos="zoom-in">
                         </div>
-                        <div class="text-white text-center">
+                        <div class="text-white text-center" data-aos="fade-left">
                             <p>Muhammad Syukur Abadi currently studying at Universitas Negeri Malang, majoring computer
                                 science. He loves to read books, doing math stuffs, build gunpla, and have willing to
                                 teach.
@@ -84,49 +85,71 @@
                 <div class="h-screen pr-4 pt-16 mb-10 border-b-2 border-white">
                     <span class="uppercase font-body text-white m-4 border-b-4 border-white">WRITINGS</span>
                     <br>
-                    <span class="m-4 text-white pt-4">Showing Latest 3 Posts On <a href="https://muhammadsyukura.medium.com/" class="hover:border-b-2 hover:border-white">Medium</a></span>
+                    <span class="m-4 text-white pt-4">Showing Latest 3 Posts On <a
+                            href="https://muhammadsyukura.medium.com/"
+                            class="hover:border-b-2 hover:border-white">Medium</a></span>
                     <div class="grid grid-cols-3 pt-4 pl-4 justify-items-center gap-2">
                         <!-- Cards -->
                         <div class="card flex flex-col place-items-center" data-aos="fade-up" data-aos-delay="500">
                             <img src="../src/dmitry-ratushny-O33IVNPb0RI-unsplash.jpg" alt="" class="object-cover pb-2">
                             <span class="font-bold">Apakah Kita Sudah Belajar Dengan Benar?</span>
                             <br>
-                            <p class="p-3 h-2/5">Belajar merupakan perjalanan spiritual dan personal, sehingga tidak dapat menjadi bahan perbandingan. Lantas, sebab-sebab apa yang membuat kita salah dalam belajar?</p>
+                            <p class="p-3 h-2/5">Belajar merupakan perjalanan spiritual dan personal, sehingga tidak
+                                dapat menjadi bahan perbandingan. Lantas, sebab-sebab apa yang membuat kita salah dalam
+                                belajar?</p>
                             <div class="btn">
-                                <a href="https://muhammadsyukura.medium.com/apakah-kita-sudah-belajar-dengan-benar-a0868b219b08" >Visit</a> 
+                                <a
+                                    href="https://muhammadsyukura.medium.com/apakah-kita-sudah-belajar-dengan-benar-a0868b219b08">Visit</a>
                             </div>
                         </div>
                         <div class="card flex flex-col place-items-center" data-aos="fade-down" data-aos-delay="1000">
-                            <img src="../src/freddie-marriage-wofDw8uqX6I-unsplash.jpg" alt="" class="pb-2 object-cover">
+                            <img src="../src/freddie-marriage-wofDw8uqX6I-unsplash.jpg" alt=""
+                                class="pb-2 object-cover">
                             <span class="font-bold">Mempersoalkan Ketakterhinggaan</span>
                             <br>
-                            <p class="p-3 h-2/5">Ketakterhinggaan merupakan bagian dari matematika yang tidak bisa dipisahkan. Namun, kadang-kadang ia muncul di tempat tak terduga. Deret Gandi merupakan penjumlahan dari 1-1+1-... yang menghasilkan nilai tak hingga. Mengapa fenomena ini bisa terjadi? </p>
+                            <p class="p-3 h-2/5">Ketakterhinggaan merupakan bagian dari matematika yang tidak bisa
+                                dipisahkan. Namun, kadang-kadang ia muncul di tempat tak terduga. Deret Gandi merupakan
+                                penjumlahan dari 1-1+1-... yang menghasilkan nilai tak hingga. Mengapa fenomena ini bisa
+                                terjadi? </p>
                             <div class="btn justify-self-center">
-                                <a href="https://muhammadsyukura.medium.com/mempersoalkan-ketakterhinggaan-ab6b8efb2122" >Visit</a> 
+                                <a
+                                    href="https://muhammadsyukura.medium.com/mempersoalkan-ketakterhinggaan-ab6b8efb2122">Visit</a>
                             </div>
                         </div>
                         <div class="card flex flex-col place-items-center " data-aos="fade-up" data-aos-delay="1500">
-                            <img src="../src/jose-antonio-gallego-vazquez-YnPKOenIOiY-unsplash.jpg" alt="" class="object-cover pb-2">
-                            <span class="font-bold">Bagaimana Rasanya Menjalani Hidup Sebagai Contoh Bagi Orang Lain?</span>
+                            <img src="../src/jose-antonio-gallego-vazquez-YnPKOenIOiY-unsplash.jpg" alt=""
+                                class="object-cover pb-2">
+                            <span class="font-bold">Bagaimana Rasanya Menjalani Hidup Sebagai Contoh Bagi Orang
+                                Lain?</span>
                             <br>
-                            <p class="p-3 h-2/5">Tiap orang memiliki jalan hidup masing-masing, namun pernahkah anda merasa <span class="italic">mengapa harus saya yang menerima ujian ini?</span></p>
+                            <p class="p-3 h-2/5">Tiap orang memiliki jalan hidup masing-masing, namun pernahkah anda
+                                merasa <span class="italic">mengapa harus saya yang menerima ujian ini?</span></p>
                             <div class="btn justify-self-center">
-                                <a href="https://muhammadsyukura.medium.com/bagaimana-rasanya-menjalani-hidup-sebagai-contoh-bagi-orang-lain-b8cebd080286" >Visit</a> 
+                                <a
+                                    href="https://muhammadsyukura.medium.com/bagaimana-rasanya-menjalani-hidup-sebagai-contoh-bagi-orang-lain-b8cebd080286">Visit</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="Projects" class="page">
-                <div class="h-screen pr-4 pt-16 mb-10 border-b-2 border-white">
-                    <span class="uppercase font-body text-white m-4 border-b-4 border-white">Projects</span>
+            <section id="Projects" class="page" data-aos="fade-right">
+                <div class="h-screen pr-4 pt-16 mb-10">
+                    <span class="uppercase font-body text-white m-4">Projects</span>
+                    <div class="uppercase flex place-items-center place-self-center text-white w-full h-full m-4"
+                        data-aos="fade-right" data-aos-delay="750">This page never meant to be empty, please come back
+                        later!</div>
                 </div>
             </section>
 
-            <section id="Contacts" class="page">
-                <div class="h-screen pr-4 pt-16 mb-10 border-b-2 border-white">
+            <section id="Contacts" class="page" data-aos="fade-right">
+                <div class="h-screen pr-4 pt-16 mb-10">
                     <span class="uppercase font-body text-white m-4 border-b-4 border-white">Contacts</span>
+                    <ul>
+                        <li class="bg-white"><i class="fab fa-github fa-3x"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                    </ul>
+                    
                 </div>
             </section>
         </main>
@@ -135,10 +158,10 @@
     <script>
         AOS.init({
             offset: 200,
-            delay:200,
-            duration:1000,
-            once:false,
-            mirror:true,
+            delay: 200,
+            duration: 1000,
+            once: false,
+            mirror: true,
         });
     </script>
 </body>
@@ -163,5 +186,15 @@
 
     });
 </script>
-
+<style>
+    main {
+        background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%23ffffff' fill-opacity='0.15'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+</style>
+<style>
+    .section-nav div.active > a {
+        transition-timing-function: ease-in-out;
+    }
+</style>
 </html>
